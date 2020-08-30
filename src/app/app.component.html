@@ -1,0 +1,5 @@
+<ng-container [ngSwitch]="layout">
+  <!-- Alternativerly use the main layout as the default switch case -->
+    <app-home-layout *ngSwitchCase="Layouts.Home"></app-home-layout>
+    <app-clientarea-layout *ngSwitchCase="Layouts.Clientarea"></app-clientarea-layout>
+</ng-container>

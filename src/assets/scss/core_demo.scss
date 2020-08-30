@@ -1,0 +1,70 @@
+/*! core_demo.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Components core
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. CSS Imports
+=============================================================================
+***/
+
+/* ==========================================================================
+0. CSS Imports
+========================================================================== */
+
+@import "abstracts/layout-colors";
+@import "abstracts/themes-main";
+@import "layout/layout-utils";
+@import "layout/layout-navbar";
+@import "layout/layout-sections";
+@import "layout/layout-hero";
+@import "layout/layout-footer";
+@import "layout/layout-animations";
+@import "layout/layout-navigation";
+@import "layout/layout-pageloader";
+@import "components/components-accordion";
+@import "components/components-buttons";
+@import "components/components-cards";
+@import "components/components-boxes";
+@import "components/components-tabs";
+@import "components/components-testimonials";
+@import "components/components-dialogs";
+@import "components/components-forms";
+@import "components/components-tables";
+@import "components/components-lists";
+@import "components/components-labels";
+@import "components/components-messages";
+@import "components/components-pricing";
+@import "components/components-dropdowns";
+@import "components/extensions-checkboxes";
+@import "components/extensions-badge";
+@import "components/extensions-range";
+@import "components/extensions-ribbon";
+@import "components/extensions-slider";
+@import "components/extensions-switch";
+@import "components/extensions-timeline";
+@import "components/extensions-uploader";
+@import "components/extensions-iconpicker";
+@import "components/extensions-calendar";
+@import "pages/pages-auth";
+@import "pages/pages-startup";
+@import "pages/pages-demo";
+@import "pages/pages-landing-kit1";
+@import "pages/pages-landing-kit2";
+@import "pages/pages-landing-kit3";
+@import "pages/pages-landing-kit4";
+@import "utilities/utilities-hover-effects";
+@import "utilities/utilities-material-shadows";
+@import "utilities/utilities-video-embed";
+@import "utilities/utilities-video-background";
+@import "layout/layout-helpers";
+@import "layout/layout-responsive";
+
+$slick-font-path: "/assets/fonts/";
+$slick-loader-path: "/assets/fonts/";
+
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../node_modules/slick-carousel/slick/slick-theme.scss";

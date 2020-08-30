@@ -1,0 +1,419 @@
+<!-- 
+ <div class="pageloader"></div>
+    <div class="infraloader is-active"></div> -->
+    
+ 
+    <!-- Hero and Navbar -->
+    <div class="hero main-hero is-fullheight">
+
+        <!-- Navbar partial -->
+        <nav class="navbar navbar-wrapper is-cloned" style=" background: #4A00E0;">
+            <div class="container" >
+                <!-- Brand -->
+           <!--      <div class="navbar-brand">
+                        <a href="index.html" class="navbar-item">
+                            <img src="assets/img/logos/tradelinenetwork.png" alt="">
+                            <span class="brand-name">Nephos</span>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                        <span></span>
+                        <span></span>
+                        </span>
+                    </div> -->
+                <div class="navbar-brand">
+                  <a class="navbar-item" routerLink="/home">
+                         <h3 style="font-size: 36px;font-style:italic;padding: 10px;color: #fff">
+                            <i style="margin-right: 10px" class="fas fa-credit-card"></i>Tradeline Network</h3>
+                        
+                          <!-- <img src="assets/img/logo/tradelinenetwork.png" alt="" >      -->
+                    </a>
+
+                  
+                </div>
+                <!-- Navbar menu -->
+                <div id="is-static" class="navbar-menu">
+                    <!-- Navbar Start -->
+                   
+                    <!-- Navbar end -->
+                    <div class="navbar-end">
+                        <!-- Navbar item -->
+                        <a style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/tradelinestore">
+                            Tradeline Store
+                        </a>
+                        <a style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/">
+                            Card Holders
+                        </a>
+                        <a style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/">
+                            How it works?
+                        </a>
+                        <a style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/">
+                            Affiliates
+                        </a>
+
+                        <!-- Navbar item -->
+                        <!-- <a *ngIf="!currentUser" style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/auth"> 
+
+                            Login
+                        </a> -->
+                        <!-- Signup button -->
+                        <div  class="navbar-item is-button is-centered-tablet">
+                          
+                            <a routerLink="cart" class="button btn-square rounded secondary-btn is-small badge"><i class="fas fa-shopping-bag"></i> </a>
+                             <span style="margin-top: -25px;margin-left: -8px;z-index: 120" class="b-badge rounded is-success">5</span>
+                        </div>
+
+                        <div *ngIf="!currentUser" class="navbar-item is-button is-centered-tablet">
+                            <a style="color:#fff" id="#signup-btn-double"  class="button button-cta is-bold btn-align primary-btn raised is-rounded"  routerLink="auth">
+                                Login/Sign up
+                            </a>
+                        </div>
+                        <div class="navbar-item is-button is-centered-tablet">
+                            <a style="color:#fff" id="#signup-btn-double"  class="button button-cta is-bold btn-align primary-btn raised is-rounded"  href="account">
+                                Client Portal
+                            </a>
+                        </div>
+                        
+                       
+
+                        
+
+                      <!--   <div *ngIf="currentUser" id="user-pic"  [ngStyle]="profilePicStyles"></div>
+                        <div *ngIf="currentUser" >{{ (user | async)?.displayName }}</div>
+                        <button *ngIf="currentUser" id="sign-out" (click)="logout()" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+                          Sign-out  
+                        </button>
+ 
+
+ -->          
+  
+                      <div *ngIf="currentUser" class="navbar-item is-button is-centered-tablet">
+
+                        <!-- <span class="badge" data-badge="1"><i class="fas fa-shopping-cart"></i></span> -->
+ <!-- <a class="button btn-square rounded is-small" id="user-pic"  [ngStyle]="profilePicStyles"></a> -->
+ <!-- <a class="button btn-square rounded secondary-btn is-small"><i class="far fa-user"></i></a>
+
+ <div style="margin-left: 5px" class="header-title">{{ (user | async)?.displayName }}</div> -->
+
+           
+            <div class="button btn-align has-icon-right primary-btn btn-outlined is-drop" style="color: #fff">
+              <a class="button btn-square rounded secondary-btn is-small"><i class="far fa-user"></i></a>
+               <div style="margin-left: 5px" class="header-title">{{currentUser.displayName }}</div>
+                    <div class="dropContain">
+                        <div class="dropOut">
+                            <ul>
+                                <li style="border-radius:0;padding: 10px;color: #777" ><a href="account"><i class="drop-icon sl sl-icon-user"></i>Account</a></li>
+                                <li style="color: #777; border-bottom: solid 1px #b5b5b5;border-radius:0;padding: 10px" href="account"><a href="account"><i class="drop-icon sl sl-icon-settings" ></i>Settings</a></li>       
+                                <hr class="navbar-divider">                          
+                                 <li (click)="logout()" style="border-radius:0;padding: 10px" ><i class="drop-icon sl sl-icon-logout"></i>Log out</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                        <!--  <div class="header-avatar">
+                        <a data-jq-dropdown="#my-dropdown"><img width="40px" height="40px"src="assets/img/profile_placeholder.png" alt=""></a>
+                            </div>
+                            <div class="header-info">
+                            <div class="header-title">Helen Miller</div>
+                            
+                        </div> -->
+
+                       
+                        <!-- Dropdown trigger -->
+                        <!-- <button *ngIf="currentUser" class="button button-cta is-bold btn-align primary-btn raised is-rounded" data-jq-dropdown="#my-dropdown"><img width="40px" height="40px"src="assets/img/profile_placeholder.png" alt=""> <div class="header-title">Helen Miller</div></button> -->
+                        <!-- /Dropdown trigger -->
+                        
+                        <!-- Dropdown -->
+                        <!-- <div id="my-dropdown" class="jq-dropdown jq-dropdown-tip">
+                            <ul class="jq-dropdown-menu">
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Tasks</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li class="jq-dropdown-divider"></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </div> -->
+                        <!-- /Dropdown -->
+                    </div>
+                    </div>
+                </div>
+
+
+             
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-wrapper navbar-light is-transparent is-static">
+            <div class="container">
+                <!-- Brand -->
+                <div class="navbar-brand">
+                    <a class="navbar-item" routerLink="/home">
+                        <h3 style="font-size: 36px;font-style:italic;padding: 10px;color: #fff">
+                            <i style="margin-right: 10px" class="fas fa-credit-card"></i>Tradeline Network</h3>
+                       <!-- <img src="assets/img/logo/tradelinenetwork.png" alt="" style="width: 350px:height:auto">       -->
+                        <!-- <img src="assets/img/logos/bulkit-white.svg" alt=""> -->
+                    </a>
+
+                    <!-- Sidebar Trigger -->
+                  <!--   <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                                <span class="icon-box-toggle">
+                                    <span class="rotate">
+                                        <i class="icon-line-top"></i>
+                                        <i class="icon-line-center"></i>
+                                        <i class="icon-line-bottom"></i>
+                                    </span>
+                        </span>
+                        </span>
+                    </a> -->
+
+                    <!-- Responsive toggle -->
+                  <!--   <div class="custom-burger" data-target="is-static">
+                        <a class="responsive-btn" href="javascript:void(0);">
+                            <span class="menu-toggle">
+                                    <span class="icon-box-toggle">
+                                        <span class="rotate">
+                                            <i class="icon-line-top"></i>
+                                            <i class="icon-line-center"></i>
+                                            <i class="icon-line-bottom"></i>
+                                        </span>
+                            </span>
+                            </span>
+                        </a>
+                    </div>
+ -->                    <!-- /Responsive toggle -->
+                </div>
+
+                <!-- Navbar menu -->
+                <div id="is-static" class="navbar-menu">
+                    <!-- Navbar Start -->
+                   
+                    <!-- Navbar end -->
+                    <div style="right: 0px" class="navbar-end">
+                        <!-- Navbar item -->
+                        <a style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/tradelinestore">
+                            Tradeline Store
+                        </a>
+                        <a style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/">
+                            Card Holders
+                        </a>
+                        <a style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/">
+                            How it works?
+                        </a>
+                        <a style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/">
+                            Affiliates
+                        </a>
+
+                        <!-- Navbar item -->
+                        <!-- <a *ngIf="!currentUser" style="color:#fff" class="navbar-item is-slide is-centered-tablet" routerLink="/auth"> 
+
+                            Login
+                        </a> -->
+                        <!-- Signup button -->
+
+                   <div class="navbar-brand">
+                        <div  class="navbar-item is-button is-centered-tablet">
+
+                            <a routerLink="cart" class="button btn-square rounded  is-small badge" style="color: #fff;background:#4A00E0;border: none"><i class="fas fa-shopping-bag"></i> </a>
+                             <span style="margin-top: -25px;margin-left: -8px;z-index: 120" class="b-badge rounded is-success">5</span>
+                           
+                        </div>
+
+                        <div *ngIf="!currentUser" class="navbar-item is-button is-centered-tablet">
+                            <a style="color:#fff" id="#signup-btn-double"  class="button button-cta is-bold btn-align primary-btn raised is-rounded"  routerLink="auth">
+                                Login/Sign up
+                            </a>
+                        </div>
+                        <div class="navbar-item is-button is-centered-tablet">
+                            <a style="color:#fff" id="#signup-btn-double"  class="button button-cta is-bold btn-align primary-btn raised is-rounded"  href="account">
+                                Client Portal
+                            </a>
+                        </div>
+                    </div>
+
+                        <!-- <span class=" navbar-item is-slide is-centered-tablet badge" data-badge="1"><i class="fas fa-shopping-basket"></i></span> -->
+
+
+                      <!--   <div *ngIf="currentUser" id="user-pic"  [ngStyle]="profilePicStyles"></div>
+                        <div *ngIf="currentUser" >{{ (user | async)?.displayName }}</div>
+                        <button *ngIf="currentUser" id="sign-out" (click)="logout()" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+                          Sign-out  
+                        </button>
+ -->          
+  
+                      <div *ngIf="currentUser" class="navbar-item is-button is-centered-tablet">
+
+            <div class="button btn-align has-icon-right  is-drop" style="color: #fff;background:#4A00E0;border: none">
+              <a style="color: #fff;background:#4A00E0;border: none" class="button btn-square rounded secondary-btn is-small"><i class="far fa-user"></i></a>
+               <div style="margin-left: 5px" class="header-title">{{currentUser.displayName }}</div>
+                    <div class="dropContain">
+                        <div class="dropOut">
+                            <ul>
+                                <li style="border-radius:0;padding: 10px" ><a href="account"><i class="drop-icon sl sl-icon-user"></i>Account</a></li>
+                                <li style="border-bottom: solid 1px #b5b5b5;border-radius:0;padding: 10px" href="account"><a href="account"><i class="drop-icon sl sl-icon-settings" ></i>Settings</a></li>      
+                                <hr class="navbar-divider">                          
+                                 <li (click)="logout()" style="border-radius:0;padding: 10px" ><i class="drop-icon sl sl-icon-logout"></i>Log out</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                        <!-- <span class="badge" data-badge="1"><i class="fas fa-shopping-cart"></i></span> -->
+ <!-- <a class="button btn-square rounded is-small" id="user-pic"  [ngStyle]="profilePicStyles"></a> -->
+ <!-- <a class="button btn-square rounded secondary-btn is-small"><i class="far fa-user"></i></a>
+  <button class="button" data-jq-dropdown="#my-dropdown">Dropdown</button>
+
+ <div style="margin-left: 5px" class="header-title">{{ (user | async)?.displayName }}</div>
+ -->
+                        <!--  <div class="header-avatar">
+                        <a data-jq-dropdown="#my-dropdown"><img width="40px" height="40px"src="assets/img/profile_placeholder.png" alt=""></a>
+                            </div>
+                            <div class="header-info">
+                            <div class="header-title">Helen Miller</div>
+                            
+                        </div> -->
+
+                       
+                        <!-- Dropdown trigger -->
+                        <!-- <button *ngIf="currentUser" class="button button-cta is-bold btn-align primary-btn raised is-rounded" data-jq-dropdown="#my-dropdown"><img width="40px" height="40px"src="assets/img/profile_placeholder.png" alt=""> <div class="header-title">Helen Miller</div></button> -->
+                        <!-- /Dropdown trigger -->
+                        
+                        <!-- Dropdown -->
+                       <!--  <div id="my-dropdown" class="jq-dropdown jq-dropdown-tip">
+                            <ul class="jq-dropdown-menu">
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Tasks</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li class="jq-dropdown-divider"></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+ -->                      
+   <!-- /Dropdown -->
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="square square-1"></div>
+        <div class="square square-2"></div>
+      
+
+      <router-outlet></router-outlet>
+
+
+
+    </div>
+
+
+    <!-- Body after the menu and courousel starts here -->
+
+   
+
+    <!-- Footer -->
+    <!-- Simple light footer -->
+    <footer class="footer-light-medium">
+        <div class="container">
+            <div class="footer-head">
+                <div class="head-text">
+                    <h3>Ready to get started?</h3>
+                    <p>Create your free account now</p>
+                </div>
+                <div class="head-action">
+                    <div class="buttons">
+                        <a class="button primary-btn is-rounded raised action-button">Try it free</a>
+                        <a class="button chat-button">Chat with us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="columns footer-body">
+                <!-- Column -->
+                <div class="column is-8">
+                    <div >
+                          <a class="navbar-item" href="/">
+                         <h3 style="font-size: 24px;font-style:italic;padding: 0px;color: #000">
+                            <i style="margin-right: 0px" class="fas fa-credit-card"></i>Tradeline Network</h3>
+                        <!-- <img src="assets/img/logos/bulkit-white.svg" alt=""> -->
+                    </a>
+                        <!-- <h3 style="font-size: 36px;font-style:italic; padding: 0px;">$TradelineNetwork</h3> -->
+                        <!--<div class="footer-description pt-10 pb-10">-->
+                        <!--    TradelineNetwork is built for developers and designers. It's modular approach lets you create an original landing page for your brand.-->
+                        <!--</div>-->
+                    </div>
+                    <div>
+                        <span class="moto">Designed and Developed with <i class="fa fa-heart color-red"></i> <a href="https://cmshosting.xyz">CMS HOSTING LLC</a> </span>
+                        <div class="social-links pt-10 pb-10">
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-facebook"></i></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-twitter"></i></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-dribbble"></i></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-github"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column -->
+                <div class="column is-4">
+                    <div class="columns">
+                        <!-- Column -->
+                        <div class="column">
+                            <ul class="footer-column">
+                                <li class="column-header">
+                                    Tradeline Network
+                                </li>
+                                <li class="column-item"><a routerLink="home">Home</a></li>
+                                <li class="column-item"><a routerLink="/">Buy</a></li>
+                                <li class="column-item"><a routerLink="/">Sell</a></li>
+                                <li class="column-item"><a routerLink="/">How it works?</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column -->
+                        <!--<div class="column">-->
+                        <!--    <ul class="footer-column">-->
+                        <!--        <li class="column-header">-->
+                        <!--            Ressources-->
+                        <!--        </li>-->
+                        <!--        <li class="column-item"><a href="#">Learning</a></li>-->
+                        <!--        <li class="column-item"><a href="#">Support center</a></li>-->
+                        <!--        <li class="column-item"><a href="#">Frequent questions</a></li>-->
+                        <!--        <li class="column-item"><a href="#">Schedule a demo</a></li>-->
+                        <!--    </ul>-->
+                        <!--</div>-->
+                        <!-- Column -->
+                        <!--<div class="column">-->
+                        <!--    <ul class="footer-column">-->
+                        <!--        <li class="column-header">-->
+                        <!--            Terms-->
+                        <!--        </li>-->
+                        <!--        <li class="column-item"><a href="#">Terms of Service</a></li>-->
+                        <!--        <li class="column-item"><a href="#">Privacy policy</a></li>-->
+                        <!--        <li class="column-item"><a href="#">SaaS services</a></li>-->
+                        <!--    </ul>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright has-text-centered">
+                <p>&copy; 2020 | <a href="https://cmshosting.xyz">CMS HOSTING LLC</a> | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- /Simple light footer -->
+    <!-- Side navigation -->
+   
+    <!-- /Side navigation -->
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div> <!-- Concatenated jQuery and plugins -->

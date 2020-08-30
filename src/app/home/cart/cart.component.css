@@ -1,0 +1,47 @@
+.auth-outer {
+    margin-top: 0px;
+}
+.storegrid{
+	width: 100%;
+    top: 20px;
+    position: relative;
+    padding: 40px;
+}
+.storefilter{
+ /*background-color: #fff;*/
+ height: 350px;
+}
+.storeheader{
+	/*border-bottom: solid 1px grey; */
+	margin-bottom: 40px;
+	color: #000;
+	 /*background-color: #fff;*/
+	 /*background-color: #d6d6d6;*/
+	 border-bottom:solid 1px #d6d6d6;
+
+	
+}
+.category-title h2{
+ font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+}
+
+.filterbody{
+	background-color: #fff;
+	 border:solid 1px #d6d6d6;
+}
+.filterheader{
+	/*background-color: #d6d6d6;*/
+	 background-color: #4A00E0;
+	 color: #fff
+}
+.listing-controls{
+ border:none;	
+ border-bottom:solid 1px #d6d6d6;
+ margin-bottom: 10px;
+}
+.auth-outer {
+    margin-top: 0px;
+}
